@@ -17,9 +17,9 @@ class Game {
         return this._hash_session;
     }
 
-    set time(){
-        this._time = 60;
-        return initCount(); 
+    set time(time = 60){
+        this._time = time;
+        initCount(); 
     }
 
     // implements player_points

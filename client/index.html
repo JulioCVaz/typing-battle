@@ -6,6 +6,28 @@
     <title>Typing Battle</title>
 </head>
 <body>
-    
+    <section class="main">
+        <div class="container">
+            <form class="form" onsubmit="roomController.createRoom(event)" method="POST">
+                <label for="user-nickname">Digite seu nickname:</label><br>
+                <input id="user-nickname" type="text" name="nickname" value="" placeholder="nickname" />
+                <button type="submit" id="new-room">Criar sala</button>
+            </form>
+        </div>
+    </section>
+    <!-- helpers -->
+    <script src="helpers/GeneratorID.js"></script>
+    <!-- models -->
+    <script src="models/Game.js"></script>
+    <script src="models/Player.js"></script>
+    <script src="models/Guest.js"></script>
+    <script src="models/Room.js"></script>
+    <!-- controllers -->
+    <script src="controllers/RoomController.js"></script>
+    <!-- views -->
+
+    <script>
+        let roomController = new RoomController();
+    </script>
 </body>
 </html>
