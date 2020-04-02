@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.battle-container{
+    width: 70%;
+    height: 500px;
+    border: 1px solid #ccc;
+}
+
+/* ROOM */
+
+.rooms-name {
+    height: 50px;
+    width: 100%;
+}
+
+.rooms-name > h1 {
+    text-align: center;
+}

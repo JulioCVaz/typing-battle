@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Battle</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
     <section class="main">
         <div class="container">
-            <form class="form" onsubmit="roomController.createRoom(event)" method="POST">
-                <label for="user-nickname">Digite seu nickname:</label><br>
-                <input id="user-nickname" type="text" name="nickname" value="" placeholder="nickname" />
-                <button type="submit" id="new-room">Criar sala</button>
-            </form>
+            <div class="battle-container"></div>
         </div>
     </section>
     <!-- helpers -->
@@ -25,9 +22,18 @@
     <!-- controllers -->
     <script src="controllers/RoomController.js"></script>
     <!-- views -->
-
+    <script src="views/View.js"></script>
+    <script src="views/RoomView.js"></script>
+    <!-- init -->
     <script>
-        let roomController = new RoomController();
+        (function(){
+            'use strict';
+
+            let nickname = prompt("Digite seu nickname:");
+            let roomController = new RoomController();
+
+            roomController.createRoom(nickname);
+        })();
     </script>
 </body>
 </html>

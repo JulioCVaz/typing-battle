@@ -1,6 +1,6 @@
 class GeneratorID {
     constructor() {
-        throw new Error('Class can not be instance');
+        throw new Error('Class cannot be instance');
     }
     static create_UUID = () => {
         let dt = new Date().getTime();

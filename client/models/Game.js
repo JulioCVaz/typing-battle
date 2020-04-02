@@ -17,6 +17,10 @@ class Game {
         return this._hash_session;
     }
 
+    get time() {
+        return this._time;
+    }
+
     set time(time = 60){
         this._time = time;
         initCount(); 
