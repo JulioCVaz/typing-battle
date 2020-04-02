@@ -12,28 +12,7 @@
             <div class="battle-container"></div>
         </div>
     </section>
-    <!-- helpers -->
-    <script src="helpers/GeneratorID.js"></script>
-    <!-- models -->
-    <script src="models/Game.js"></script>
-    <script src="models/Player.js"></script>
-    <script src="models/Guest.js"></script>
-    <script src="models/Room.js"></script>
-    <!-- controllers -->
-    <script src="controllers/RoomController.js"></script>
-    <!-- views -->
-    <script src="views/View.js"></script>
-    <script src="views/RoomView.js"></script>
-    <!-- init -->
-    <script>
-        (function(){
-            'use strict';
-
-            let nickname = prompt("Digite seu nickname:");
-            let roomController = new RoomController();
-
-            roomController.createRoom(nickname);
-        })();
-    </script>
+    <!-- script init -->
+    <script type="module" src="init.js"></script>
 </body>
 </html>

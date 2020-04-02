@@ -1,3 +1,4 @@
+import View from '../views/View.js';
 class RoomView extends View {
     constructor(element){
         super(element);
@@ -9,3 +10,5 @@ class RoomView extends View {
         </div>
     `;
 }
+
+export default RoomView;

@@ -7,3 +7,5 @@ class View {
 
     update = (model) => this._element.innerHTML = this.generateHTML(model);
 }
+
+export default View;

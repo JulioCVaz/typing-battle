@@ -1,6 +1,10 @@
-class RoomController{
+import RoomView from '../views/RoomView.js';
+import Room from '../models/Room.js';
+import { create_UUID } from '../helpers/GeneratorID.js';
+
+class RoomController {
     constructor(){
-        this._uuid = GeneratorID.create_UUID();
+        this._uuid = create_UUID();
         this._roomView = new RoomView(document.querySelector('.battle-container'));
     }
 
@@ -17,3 +21,5 @@ class RoomController{
     }
 
 }
+
+export default RoomController;
