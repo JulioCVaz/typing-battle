@@ -10,6 +10,7 @@ class RoomView extends View {
             <div>
                 <h2>${model.user_nickname}</h2>
                 <h3>github-actions</h3>
+                <h4>github-actions1</h4>
             </div> 
         </div>
     `;
